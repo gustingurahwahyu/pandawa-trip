@@ -1,5 +1,5 @@
 <div class="bg-primary">
-  <footer class="container xl:px-0 px-8 pt-10 lg:pt-32 pb-16 mx-auto text-white footer">
+  <footer class="container px-8 pt-10 lg:pt-32 pb-16 mx-auto text-white footer">
     <div class="flex lg:flex-row flex-col mb-5">
       <div class="flex-col w-full lg:w-9/12 lg:h-48 space-y-8 lg:mb-0 mb-5 text-center lg:text-left">
         <img class="w-28 lg:w-40 xl:w-48 mx-auto lg:mx-0" src="image/logo-pandawa-trip-invert.svg" alt="Pandawa Trip">

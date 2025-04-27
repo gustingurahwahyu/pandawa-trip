@@ -1,5 +1,5 @@
 <nav class="bg-softgray">
-    <div class="container flex items-center justify-between xl:px-0 px-8 py-8 mx-auto">
+    <div class="container flex items-center justify-between px-8 py-8 mx-auto">
         <!-- Logo and Tagline -->
         <div class="flex items-center">
             <img class="w-24 md:w-32 lg:w-40 xl:w-56" src="image/logo-pandawa-trip.svg" alt="Pandawa Trip">
