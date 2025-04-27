@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1 class="mt-10 text-3xl font-bold text-center text-red-400">
+    <h1 class="mt-10 text-3xl font-bold text-center">
         Welcome to Destinasi Pandawa Trip
     </h1>
 </body>

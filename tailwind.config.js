@@ -12,9 +12,16 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['Poppins', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                primary: '#FF4900',
+                secondary: '#242424',
+                white: '#FFFFFF',
+                softgray: '#F0F0F0',
+                graytext: '#6E6E6E'
+            }
         },
     },
-    plugins: [],
+    plugins: []
 };

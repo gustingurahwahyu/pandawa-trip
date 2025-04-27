@@ -1,18 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WebController;
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/paket', function () {
-    return view('paket');
-});
-
-Route::get('/destinasi', function () {
-    return view('destinasi');
-});
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/', [WebController::class, 'beranda'])->name('beranda');
+Route::get('/paket', [WebController::class, 'paket'])->name('paket');
+Route::get('/destinasi', [WebController::class, 'destinasi'])->name('destinasi');
+Route::get('/tentangKami', [WebController::class, 'tentangKami'])->name('tentangKami');
+Route::get('/test', [WebController::class, 'test'])->name('test');
