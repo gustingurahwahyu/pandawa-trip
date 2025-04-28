@@ -4,7 +4,7 @@
 
 @section('content')
 @include('components.searchbar')
-@include('pages.paket.card')
+@include('pages.paket.cards')
 
 
 @endsection
