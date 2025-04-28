@@ -13,7 +13,7 @@
         </div>
         <!-- Pesan Sekarang Button -->
         <div class="hidden lg:flex">
-            <a href="/paket" class="items-center px-8 py-3.5 text-white font-semibold bg-primary rounded-md ">
+            <a href="/paket" class="items-center px-8 py-3.5 text-white font-semibold bg-primary rounded-md brightness-100 hover:brightness-75 transition-all ease-out duration-300">
                 Pesan Sekarang
             </a>
         </div>
