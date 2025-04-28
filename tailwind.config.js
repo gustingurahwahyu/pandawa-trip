@@ -34,6 +34,7 @@ export default {
             'lg': '0.5rem',
             'full': '9999px',
             'card': '0.75rem',
+            'xl': '1.5rem',
         },
         extend: {
             fontFamily: {

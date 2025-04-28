@@ -1,6 +1,6 @@
 <div class="container flex-col mx-auto px-8 my-6 space-y-5">
 
-  <a href="/paket" class="block">
+  <a href="/paketDetail" class="block">
     <div class="flex w-full h-[22rem] bg-white drop-shadow-lg rounded-card overflow-hidden">
       <div class="image-container w-4/12 h-[22rem]">
         <img class="w-full h-full object-cover" src="image/paket-ubud-trip.jpg" alt="paket ubut trip">
@@ -41,7 +41,7 @@
     </div>
   </a>
 
-  <a href="/paket" class="block">
+  <a href="/paketDetail" class="block">
     <div class="flex w-full h-[22rem] bg-white drop-shadow-lg rounded-card overflow-hidden">
       <div class="image-container w-4/12 h-[22rem]">
         <img class="w-full h-full object-cover" src="image/paket-ubud-trip.jpg" alt="paket ubut trip">
@@ -82,7 +82,7 @@
     </div>
   </a>
 
-  <a href="/paket" class="block">
+  <a href="/paketDetail" class="block">
     <div class="flex w-full h-[22rem] bg-white drop-shadow-lg rounded-card overflow-hidden">
       <div class="image-container w-4/12 h-[22rem]">
         <img class="w-full h-full object-cover" src="image/paket-ubud-trip.jpg" alt="paket ubut trip">
@@ -123,7 +123,7 @@
     </div>
   </a>
 
-  <a href="/paket" class="block">
+  <a href="/paketDetail" class="block">
     <div class="flex w-full h-[22rem] bg-white drop-shadow-lg rounded-card overflow-hidden">
       <div class="image-container w-4/12 h-[22rem]">
         <img class="w-full h-full object-cover" src="image/paket-ubud-trip.jpg" alt="paket ubut trip">
@@ -164,7 +164,7 @@
     </div>
   </a>
 
-  <a href="/paket" class="block">
+  <a href="/paketDetail" class="block">
     <div class="flex w-full h-[22rem] bg-white drop-shadow-lg rounded-card overflow-hidden">
       <div class="image-container w-4/12 h-[22rem]">
         <img class="w-full h-full object-cover" src="image/paket-ubud-trip.jpg" alt="paket ubut trip">
