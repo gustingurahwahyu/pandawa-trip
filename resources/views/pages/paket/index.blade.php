@@ -3,7 +3,7 @@
 @section('title', 'Paket Pandawa Trip')
 
 @section('content')
-@include('components.searchbar')
+@include('components.searchbarPaket')
 @include('pages.paket.cards')
 
 

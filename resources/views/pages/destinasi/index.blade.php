@@ -3,7 +3,8 @@
 @section('title', 'Destinasi Pandawa Trip')
 
 @section('content')
-@include('components.searchbar')
+@include('components.searchbarDestinasi')
 @include('pages.destinasi.cards')
+@include('components.destinasiModal')
 
 @endsection

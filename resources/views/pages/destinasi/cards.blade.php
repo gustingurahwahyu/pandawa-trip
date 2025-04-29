@@ -1,7 +1,7 @@
 <div class="container mx-auto px-8 my-6">
   <div class="grid grid-cols-4 gap-5">
 
-    <a href="" class="block">
+    <a href="#" data-modal-target="default-modal" data-modal-toggle="default-modal" class="block">
       <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden">
         <div class="image-container h-[169px]">
           <img src="image/background-paket-detail.jpg" class="w-full h-full object-cover" alt="destinasi card">
