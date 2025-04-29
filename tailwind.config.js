@@ -35,6 +35,7 @@ export default {
             'full': '9999px',
             'card': '0.75rem',
             'xl': '1.5rem',
+            'team': '1.75rem',
         },
         extend: {
             fontFamily: {

@@ -9,7 +9,7 @@ use App\Http\Controllers\DestinasiController;
 Route::get('/', [WebController::class, 'beranda'])->name('beranda');
 
 Route::get('/paket', [PaketController::class, 'index'])->name('paket');
-Route::get('/paket/{id}', [PaketController::class, 'show'])->name('show');
+Route::get('/paketDetail', [PaketController::class, 'show'])->name('show');
 
 
 Route::get('/destinasi', [DestinasiController::class, 'index'])->name('destinasi');

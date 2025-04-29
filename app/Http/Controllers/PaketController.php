@@ -20,9 +20,10 @@ class PaketController extends Controller
         return view('pages.paket.index', compact('pakets', 'search'));
     }
 
-    public function show($id)
+    public function show()
     {
-        $paket = PaketTravel::findOrFail($id);
-        return view('pages.paketDetail.index', compact('paket'));
+        // $paket = PaketTravel::findOrFail($id);
+        // return view('pages.paketDetail.index', compact('paket'));
+        return view('pages.paketDetail.index');
     }
 }

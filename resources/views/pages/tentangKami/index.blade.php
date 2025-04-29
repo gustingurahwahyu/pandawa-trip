@@ -1,17 +1,9 @@
-<!doctype html>
-<html>
+@extends('layout.app')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite('resources/css/app.css')
-    <title>Pandawa Trip</title>
-</head>
+@section('title', 'Tentang Kami Pandawa Trip')
 
-<body>
-    <h1 class="mt-10 text-3xl font-bold text-center">
-        Welcome to About Pandawa Trip
-    </h1>
-</body>
+@section('content')
+@include('pages.tentangKami.hero')
+@include('pages.tentangKami.teamCards')
 
-</html>
+@endsection
