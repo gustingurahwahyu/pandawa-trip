@@ -11,18 +11,18 @@ class WebController extends Controller
   {
     return view('pages.beranda.index');
   }
-  public function paket(): View
-  {
-    return view('pages.paket.index');
-  }
-  public function paketDetail(): View
-  {
-    return view('pages.paketDetail.index');
-  }
-  public function destinasi(): View
-  {
-    return view('pages.destinasi.index');
-  }
+  // public function paket(): View
+  // {
+  //   return view('pages.paket.index');
+  // }
+  // public function paketDetail(): View
+  // {
+  //   return view('pages.paketDetail.index');
+  // }
+  // public function destinasi(): View
+  // {
+  //   return view('pages.destinasi.index');
+  // }
   public function tentangKami(): View
   {
     return view('pages.tentangKami.index');
