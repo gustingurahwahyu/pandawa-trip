@@ -12,9 +12,10 @@ class DestinasiController extends Controller
     {
         $search = $request->input('search');
 
-        $pakets = Destinasi::when($search, function ($query, $search) {
+        $destinasis = Destinasi::when($search, function ($query, $search) {
             return $query->where('nama', 'like', '%' . $search . '%');
         })->get();
+
         return view('pages.destinasi.index', compact('destinasis'));
     }
     public function show($id)
