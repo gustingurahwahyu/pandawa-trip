@@ -8,7 +8,7 @@
             </div>
             <div class="flex w-5/12 items-end p-14">
                 <p class="leading-relaxed">
-                    Satu-satunya tujuan tim kami adalah menciptakan momen-momen berkesan bagi setiap pelancong.
+                    Satu-satunya tujuan tim kami adalah menciptakan momen-momen berkesan bagi setiap pelancong kami.
                 </p>
             </div>
         </div>

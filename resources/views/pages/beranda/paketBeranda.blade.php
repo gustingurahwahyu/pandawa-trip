@@ -98,6 +98,27 @@
       </div>
     </div>
 
+    <div class="flex justify-center relative w-72">
+      <div class="image-container w-72 h-[26rem] bg-white rounded-card overflow-hidden">
+        <img class="h-full object-cover" src="image/ubud.jpg" alt="paket ubud">
+      </div>
+      <div class="card-detail w-[17rem] h-44 bg-white z-1 rounded-card absolute top-80 mx-auto drop-shadow-xl p-5 space-y-4">
+        <p class="flex font-medium text-secondary">
+          <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3996 16.4679C11.7159 15.7735 15.8334 13.2736 15.8334 9.16671C15.8334 5.94505 13.2217 3.33337 10 3.33337C6.77836 3.33337 4.16669 5.94505 4.16669 9.16671C4.16669 13.2736 8.2841 15.7735 9.60049 16.4679C9.85244 16.6008 10.1476 16.6008 10.3996 16.4679ZM10 11.6667C11.3807 11.6667 12.5 10.5474 12.5 9.16671C12.5 7.786 11.3807 6.66671 10 6.66671C8.61931 6.66671 7.50002 7.786 7.50002 9.16671C7.50002 10.5474 8.61931 11.6667 10 11.6667Z" fill="#FF4900" />
+          </svg>
+          Bali, Indonesia
+        </p>
+        <p class="text-2xl font-semibold text-secondary mt-2">Ubud Trip</p>
+        <div class="flex items-center justify-between">
+          <p class="text-graytext text-xl">Rp500.000</p>
+          <button class="flex w-10 h-10 items-center justify-center rounded-full bg-primary">
+            <img src="image/icon/arrow-right.svg" alt="arrow right">
+          </button>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </div>

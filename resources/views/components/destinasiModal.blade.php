@@ -8,7 +8,7 @@
     <div class="relative w-full max-w-5xl max-h-full py-12 px-14 bg-white rounded-card">
 
         <!-- Close Button -->
-        <div class="absolute z-[99] top-4 right-4">
+        <div class="absolute z-[98] top-4 right-4">
             <a href="/destinasi" type="button" class="text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center data-modal-hide=" default-modal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                     <path d="M18 0.5C8.25 0.5 0.5 8.25 0.5 18C0.5 27.75 8.25 35.5 18 35.5C27.75 35.5 35.5 27.75 35.5 18C35.5 8.25 27.75 0.5 18 0.5ZM24.75 26.75L18 20L11.25 26.75L9.25 24.75L16 18L9.25 11.25L11.25 9.25L18 16L24.75 9.25L26.75 11.25L20 18L26.75 24.75L24.75 26.75Z" fill="#FF4900" />

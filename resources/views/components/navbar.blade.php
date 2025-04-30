@@ -1,4 +1,4 @@
-<nav class="bg-softgray">
+<nav class="bg-softgray sticky top-0 z-[11]">
     <div class="container flex items-center justify-between px-8 py-8 mx-auto">
         <!-- Logo and Tagline -->
         <div class="flex items-center">

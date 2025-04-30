@@ -2,7 +2,7 @@
   <div class="grid grid-cols-4 gap-5">
 
     <a href="#" data-modal-target="default-modal" data-modal-toggle="default-modal" class="block">
-      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden">
+      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden drop-shadow-lg">
         <div class="image-container h-[169px]">
           <img src="image/background-paket-detail.jpg" class="w-full h-full object-cover" alt="destinasi card">
         </div>
@@ -27,7 +27,7 @@
     </a>
 
     <a href="" class="block">
-      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden">
+      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden drop-shadow-lg">
         <div class="image-container h-[169px]">
           <img src="image/background-paket-detail.jpg" class="w-full h-full object-cover" alt="destinasi card">
         </div>
@@ -52,7 +52,7 @@
     </a>
 
     <a href="" class="block">
-      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden">
+      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden drop-shadow-lg">
         <div class="image-container h-[169px]">
           <img src="image/background-paket-detail.jpg" class="w-full h-full object-cover" alt="destinasi card">
         </div>
@@ -77,7 +77,7 @@
     </a>
 
     <a href="" class="block">
-      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden">
+      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden drop-shadow-lg">
         <div class="image-container h-[169px]">
           <img src="image/background-paket-detail.jpg" class="w-full h-full object-cover" alt="destinasi card">
         </div>
@@ -102,7 +102,7 @@
     </a>
 
     <a href="" class="block">
-      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden">
+      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden drop-shadow-lg">
         <div class="image-container h-[169px]">
           <img src="image/background-paket-detail.jpg" class="w-full h-full object-cover" alt="destinasi card">
         </div>
@@ -127,7 +127,7 @@
     </a>
 
     <a href="" class="block">
-      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden">
+      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden drop-shadow-lg">
         <div class="image-container h-[169px]">
           <img src="image/background-paket-detail.jpg" class="w-full h-full object-cover" alt="destinasi card">
         </div>
@@ -152,7 +152,7 @@
     </a>
 
     <a href="" class="block">
-      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden">
+      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden drop-shadow-lg">
         <div class="image-container h-[169px]">
           <img src="image/background-paket-detail.jpg" class="w-full h-full object-cover" alt="destinasi card">
         </div>
@@ -177,7 +177,7 @@
     </a>
 
     <a href="" class="block">
-      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden">
+      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden drop-shadow-lg">
         <div class="image-container h-[169px]">
           <img src="image/background-paket-detail.jpg" class="w-full h-full object-cover" alt="destinasi card">
         </div>
@@ -202,7 +202,7 @@
     </a>
 
     <a href="" class="block">
-      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden">
+      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden drop-shadow-lg">
         <div class="image-container h-[169px]">
           <img src="image/background-paket-detail.jpg" class="w-full h-full object-cover" alt="destinasi card">
         </div>
@@ -227,7 +227,7 @@
     </a>
 
     <a href="" class="block">
-      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden">
+      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden drop-shadow-lg">
         <div class="image-container h-[169px]">
           <img src="image/background-paket-detail.jpg" class="w-full h-full object-cover" alt="destinasi card">
         </div>
@@ -252,7 +252,7 @@
     </a>
 
     <a href="" class="block">
-      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden">
+      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden drop-shadow-lg">
         <div class="image-container h-[169px]">
           <img src="image/background-paket-detail.jpg" class="w-full h-full object-cover" alt="destinasi card">
         </div>
@@ -277,7 +277,7 @@
     </a>
 
     <a href="" class="block">
-      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden">
+      <div class="destinasi-card flex-col h-[380px] flex rounded-card overflow-hidden drop-shadow-lg">
         <div class="image-container h-[169px]">
           <img src="image/background-paket-detail.jpg" class="w-full h-full object-cover" alt="destinasi card">
         </div>
