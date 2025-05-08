@@ -13,8 +13,21 @@
       </button>
     </div>
   </form>
-  <button class="flex bg-transparent border border-graytext text-lg text-secondary py-2 px-4 rounded-full">
+
+  <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-offset-skidding="25" class="flex bg-transparent border border-graytext text-lg text-secondary py-2 px-4 rounded-full">
     <img src="image/icon/sort.svg" alt="sort">
     Urutkan
   </button>
+  <!-- Dropdown menu -->
+  <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+    <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Nama Paket</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Harga</a>
+      </li>
+    </ul>
+  </div>
+
 </div>
