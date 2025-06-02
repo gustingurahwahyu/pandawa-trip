@@ -11,13 +11,20 @@ class DestinasiController extends Controller
     public function index(Request $request)
     {
         $search = $request->input('search');
-
+        $sort = $request->input('sort');
 
         $destinasis = Destinasi::when($search, function ($query, $search) {
             return $query->where('name', 'like', '%' . $search . '%');
         })
+            ->when($sort, function ($query, $sort) {
+                if ($sort === 'name') {
+                    return $query->orderBy('name');
+                } elseif ($sort === 'price') {
+                    return $query->orderBy('price');
+                }
+            })
             ->get();
 
-        return view('pages.destinasi.index', compact('destinasis'));
+        return view('pages.destinasi.index', compact('destinasis', 'search', 'sort'));
     }
 }
