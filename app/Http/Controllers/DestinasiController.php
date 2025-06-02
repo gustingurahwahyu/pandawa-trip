@@ -23,7 +23,7 @@ class DestinasiController extends Controller
                     return $query->orderBy('price');
                 }
             })
-            ->get();
+            ->paginate(12);
 
         return view('pages.destinasi.index', compact('destinasis', 'search', 'sort'));
     }
