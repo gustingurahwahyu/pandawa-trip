@@ -12,15 +12,20 @@ class DestinasiController extends Controller
     {
         $search = $request->input('search');
 
-        $destinasis = Destinasi::when($search, function ($query, $search) {
-            return $query->where('nama', 'like', '%' . $search . '%');
-        })->get();
+        // Eager load relasi 'paketTravel' (ganti sesuai relasi yang ada di model Destinasi)
+        $destinasis = Destinasi::with('paketTravel')
+            ->when($search, function ($query, $search) {
+                return $query->where('nama', 'like', '%' . $search . '%');
+            })
+            ->get();
 
         return view('pages.destinasi.index', compact('destinasis'));
     }
+
     public function show($id)
     {
-        $destinasi = Destinasi::findOrFail($id);
+        // Eager load relasi juga di sini
+        $destinasi = Destinasi::with('paketTravel')->findOrFail($id);
         return $destinasi;
     }
 }
