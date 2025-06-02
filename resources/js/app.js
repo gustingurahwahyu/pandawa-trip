@@ -15,19 +15,29 @@ import './bootstrap';
 //     }
 // };
 
+import { Splide } from '@splidejs/splide';
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
-const navbar = document.getElementById("navbar");
-
-window.addEventListener("scroll", () => {
-  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-
-    console.log(scrollTop);
-
-  if (scrollTop > 100) {
-    navbar.classList.add('bg-white/100');
-    navbar.classList.remove('bg-white/0');
-  } else {
-      navbar.classList.add('bg-white/0');
-    navbar.classList.remove('bg-white/100');
-  }
+var splide = new Splide( '#team-cards', {
+    type: 'loop',
+    perPage: 3,
+    perMove: 1,
+    gap: '1.5rem',
+    drag: false,
+    snap: false,
+    pagination: false,
+    arrows: false,
+    breakpoints: {
+        768: {
+            perPage: 2.5,
+        },
+        640: {
+            perPage: 1,
+        }
+    },
+    autoScroll: {
+        speed: 0.8,
+    },
 });
+
+splide.mount( { AutoScroll } );

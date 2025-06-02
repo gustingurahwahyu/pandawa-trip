@@ -7,4 +7,5 @@
 @include('pages.destinasi.cards')
 @include('components.destinasiModal')
 
+
 @endsection

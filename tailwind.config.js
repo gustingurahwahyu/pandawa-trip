@@ -46,7 +46,8 @@ export default {
                 secondary: '#242424',
                 white: '#FFFFFF',
                 softgray: '#F0F0F0',
-                graytext: '#6E6E6E'
+                graytext: '#6E6E6E',
+                borderColor: '#D7D7D7',
             }
         },
     },

@@ -3,8 +3,8 @@
 @section('title', 'Paket Detail Pandawa Trip')
 
 @section('content')
-@include('pages.paketDetail.datePicker')
-@include('pages.paketDetail.paketDetail')
+@include('pages.PDetail.datePicker')
+@include('pages.PDetail.PDetail')
 
 
 @endsection

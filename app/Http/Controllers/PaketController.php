@@ -24,6 +24,6 @@ class PaketController extends Controller
     {
         // $paket = PaketTravel::findOrFail($id);
         // return view('pages.paketDetail.index', compact('paket'));
-        return view('pages.paketDetail.index');
+        return view('pages.PDetail.index');
     }
 }

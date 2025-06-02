@@ -15,6 +15,8 @@
         "vite": "^6.0.11"
     },
     "dependencies": {
+        "@splidejs/splide": "^4.1.4",
+        "@splidejs/splide-extension-auto-scroll": "^0.5.3",
         "flowbite": "^3.1.2"
     }
 }
