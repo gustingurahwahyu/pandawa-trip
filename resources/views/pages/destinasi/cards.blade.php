@@ -7,14 +7,14 @@
       <div
         class="destinasi-card flex flex-col h-[220px] md:h-[290px] lg:h-[340px] xl:h-[380px] rounded-md md:rounded-card overflow-hidden drop-shadow-sm md:drop-shadow-md xl:drop-shadow-lg bg-white">
         <div class="flex w-full image-container h-[150px]">
-          <img src="{{ asset('storage/' . $destinasi->image) }}" class="object-cover w-full h-full"
+          <img src="{{ asset('storage/' . $destinasi->image) }}" class="object-cover w-full h-[150px]"
             alt="{{ $destinasi->name }}">
         </div>
         <div class="flex flex-col p-2 bg-white rounded-md card-detail h-5/12 md:p-4 md:rounded-card">
-          <p class="font-semibold md:text-lg lg:text-xl text-secondary">
+          <p class="font-bold text-xs md:text-sm lg:text-base text-secondary">
             {{ $destinasi->name }}
           </p>
-          <p class="flex text-xs font-medium text-graytext md:text-sm lg:text-base">
+          <p class="flex text-[0.5rem] font-medium text-graytext md:text-xs lg:text-sm">
             <svg class="w-4 mr-1 md:w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
               fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -24,7 +24,7 @@
             {{ $destinasi->location }}
           </p>
           <p
-            class="mt-2 text-xs text-graytext md:text-sm lg:text-base line-clamp-2 md:line-clamp-2 lg:line-clamp-3">
+            class="mt-2 text-[0.5rem] text-graytext md:text-xs lg:text-sm line-clamp-2 md:line-clamp-2 lg:line-clamp-3">
             {{ $destinasi->description }}
           </p>
           <p class="mt-2 text-lg font-semibold text-end md:text-xl lg:text-2xl text-primary">
