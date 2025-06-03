@@ -23,14 +23,8 @@
             <!-- Modal Images -->
             <div class="flex flex-col gap-y-2 md:gap-y-5 justify-center">
                 <!-- Big Image -->
-                <div class="image-big-container w-full rounded-card overflow-hidden h-40 md:h-72">
+                <div class="image-big-container w-full rounded-card overflow-hidden h-40 md:h-[25rem]">
                     <img src="image/background-paket-detail.jpg" alt="barong dance" class="h-full w-full object-cover ">
-                </div>
-                <!-- Small Image -->
-                <div class="image-small-container grid grid-cols-3 gap-x-2 md:gap-x-5">
-                    <div class="image-small-item-container rounded-card overflow-hidden"><img src="image/barong-dance.jpg" alt="barong dance" class="w-full h-full object-cover "></div>
-                    <div class="image-small-item-container rounded-card overflow-hidden"><img src="image/barong-dance.jpg" alt="barong dance" class="w-full h-full object-cover "></div>
-                    <div class="image-small-item-container rounded-card overflow-hidden"><img src="image/barong-dance.jpg" alt="barong dance" class="w-full h-full object-cover "></div>
                 </div>
             </div>
 
