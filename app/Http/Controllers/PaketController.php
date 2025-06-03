@@ -13,13 +13,13 @@ class PaketController extends Controller
         $sort = $request->input('sort');
 
         $pakets = PaketTravel::when($search, function ($query, $search) {
-            return $query->where('nama', 'like', '%' . $search . '%');
+            return $query->where('name', 'like', '%' . $search . '%');
         })
             ->when($sort, function ($query, $sort) {
-                if ($sort === 'nama') {
-                    return $query->orderBy('nama');
-                } elseif ($sort === 'harga') {
-                    return $query->orderBy('harga');
+                if ($sort === 'name') {
+                    return $query->orderBy('name');
+                } elseif ($sort === 'price') {
+                    return $query->orderBy('price');
                 }
             })
             ->get();
@@ -31,6 +31,6 @@ class PaketController extends Controller
     {
         $paket = PaketTravel::with('destinasis')->findOrFail($id);
 
-        return view('pages.paketDetail.index', compact('paket'));
+        return view('pages.PDetail.index', compact('paket'));
     }
 }

@@ -9,13 +9,11 @@ use App\Http\Controllers\DestinasiController;
 Route::get('/', [WebController::class, 'beranda'])->name('beranda');
 
 Route::get('/paket', [PaketController::class, 'index'])->name('paket');
-Route::get('/PDetail', [PaketController::class, 'show'])->name('show');
+Route::get('/PDetail/{id}', [PaketController::class, 'show'])->name('show');
 
 
 Route::get('/destinasi', [DestinasiController::class, 'index'])->name('destinasi');
-Route::get('/destinasi/{id}', [DestinasiController::class, 'show'])->name('destinasi.show');
 
 
 
 Route::get('/tentangKami', [WebController::class, 'tentangKami'])->name('tentangKami');
-Route::get('/test', [WebController::class, 'test'])->name('test');

@@ -25,6 +25,13 @@ class DestinasiController extends Controller
             })
             ->paginate(12);
 
+
         return view('pages.destinasi.index', compact('destinasis', 'search', 'sort'));
+    }
+
+    public function show($id)
+    {
+        $destinasi = Destinasi::findOrFail($id);
+        return $destinasi;
     }
 }
