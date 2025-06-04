@@ -40,7 +40,7 @@ class DestinasiResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')->sortable()->searchable(),
-                Tables\Columns\ImageColumn::make('image'),
+                // Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('price')->searchable(),
                 Tables\Columns\TextColumn::make('location'),
             ])

@@ -40,7 +40,7 @@ class PaketTravelResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')->sortable()->searchable(),
                 Tables\Columns\TextColumn::make('capacity'),
-                Tables\Columns\ImageColumn::make('image'),
+                // Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('duration'),
                 Tables\Columns\TextColumn::make('price'),
                 Tables\Columns\TextColumn::make('discount'),
