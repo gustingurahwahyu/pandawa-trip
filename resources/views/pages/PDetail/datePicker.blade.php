@@ -1,5 +1,5 @@
 <div class="relative flex justify-center w-full mb-24 md:mb-28 lg:mb-32">
-    <div class="w-full image-container">
+    <div class="w-full h-[190px] md:h-[380px] lg:h-[500px] xl:h-[700px] image-container">
         <img src="{{ asset('storage/' . $paket->image) }}" class="object-cover w-full h-full"
             alt="background paket detail">
     </div>

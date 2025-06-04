@@ -73,6 +73,18 @@
                 UI/UX Designer
             </p>
         </div>
+
+        <div class="card flex flex-col w-4/12 h-96 drop-shadow-lg bg-white p-10 rounded-team text-center justify-center items-center">
+            <div class="image-container w-48 h-48 rounded-full overflow-hidden">
+                <img src="image/profil-mahen.jpeg" alt="Dharma" class="w-full h-full  object-cover">
+            </div>
+            <h1 class="text-2xl font-semibold text-secondary mt-5">
+                Mahendra Saputra
+            </h1>
+            <p class="text-lg text-primary mt-2">
+                Pengebek Gumi
+            </p>
+        </div>
     </div>
 
     <!-- Tablet & Mobile -->

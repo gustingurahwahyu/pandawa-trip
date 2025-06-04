@@ -3,15 +3,15 @@
 
     <!-- Logo and Tagline -->
     <div class="flex items-center">
-      <img class="w-36 md:w-48 xl:w-56" src="image/logo-pandawa-trip.svg" alt="Pandawa Trip">
+      <img class="w-36 md:w-48 xl:w-56" src="{{ asset('image/logo-pandawa-trip.svg') }}" alt="Pandawa Trip">
     </div>
 
     <!-- Navigation Links -->
-    <div class="space-x-8 lg:flex hidden">
-      <a href="/" class="text-secondary font-medium">Beranda</a>
-      <a href="/paket" class="text-secondary font-medium">Paket</a>
-      <a href="/destinasi" class="text-secondary font-medium">Destinasi</a>
-      <a href="/tentangKami" class="text-secondary font-medium">Tentang Kami</a>
+    <div id="navbar-element" class="space-x-8 lg:flex hidden">
+      <a href="/" class="text-graytext font-medium">Beranda</a>
+      <a href="/paket" class="text-graytext font-medium">Paket</a>
+      <a href="/destinasi" class="text-graytext font-medium">Destinasi</a>
+      <a href="/tentangKami" class="text-graytext font-medium">Tentang Kami</a>
     </div>
 
     <!-- Pesan Sekarang dan Hamburger -->
@@ -143,4 +143,35 @@
   else {
 
   }
+
+  // navbar active and inactive element style
+  const navbarElement = document.getElementById('navbar-element');
+  const navbarElementLinks = navbarElement.querySelectorAll('a');
+
+  navbarElementLinks.forEach(link => {
+    const linkPath = new URL(link.href).pathname;
+    const currentPath = window.location.pathname;
+
+    // Custom logic untuk menentukan active link
+    let isActive = false;
+
+    if (linkPath === '/') {
+      isActive = currentPath === '/';
+    } else if (linkPath === '/paket') {
+      // Aktif saat di /paket atau /PDetail
+      isActive = currentPath.startsWith('/paket') || currentPath.startsWith('/PDetail');
+    } else if (linkPath === '/destinasi') {
+      isActive = currentPath.startsWith('/destinasi');
+    } else {
+      isActive = currentPath.startsWith(linkPath);
+    }
+
+    if (isActive) {
+      link.classList.remove("text-graytext");
+      link.classList.add("text-secondary", "border-primary", "border-b-2", "font-semibold");
+    } else {
+      link.classList.remove("text-secondary", "border-primary", "border-b-2", "font-semibold");
+      link.classList.add("text-graytext");
+    }
+  });
 </script>

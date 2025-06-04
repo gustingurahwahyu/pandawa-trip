@@ -2,7 +2,7 @@
   <footer class="container px-8 pt-10 lg:pt-32 pb-16 mx-auto text-white footer">
     <div class="flex lg:flex-row flex-col mb-5">
       <div class="flex-col w-full lg:w-9/12 lg:h-48 space-y-8 lg:mb-0 mb-5 text-center lg:text-left">
-        <img class="w-28 lg:w-40 xl:w-48 mx-auto lg:mx-0" src="image/logo-pandawa-trip-invert.svg" alt="Pandawa Trip">
+        <img class="w-28 lg:w-40 xl:w-48 mx-auto lg:mx-0" src="{{ asset('image/logo-pandawa-trip-invert.svg') }}" alt="Pandawa Trip">
         <p class="lg:pr-96 text-sm lg:text-base">
           Jangan tunda lagi, saatnya liburan ke Bali dan temukan keindahan serta pengalaman seru yang belum pernah kamu rasakan sebelumnya.
         </p>

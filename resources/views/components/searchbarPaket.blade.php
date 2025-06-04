@@ -1,6 +1,6 @@
 <div id="searchbar"
-    class="container flex-col px-3 md:px-8 mx-auto py-1.5 md:py-2 xl:py-4 space-y-2 md:space-y-3 xl:space-y-6 z-[999] bg-softgray/0">
-    <form class="w-full" method="GET" action="{{ route('paket') }}">
+    class="container flex-col px-3 md:px-8 mx-auto py-1.5 md:py-2 xl:py-4 z-[999] bg-softgray/0">
+    <form class="w-full space-y-2 md:space-y-3 xl:space-y-6" method="GET" action="{{ route('paket') }}">
         <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
         <div class="relative">
             <div class="absolute inset-y-0 z-10 flex items-center pointer-events-none start-0 ps-4 md:ps-5">

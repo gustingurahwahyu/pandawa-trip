@@ -19,7 +19,7 @@ class PaketController extends Controller
                 if ($sort === 'name') {
                     return $query->orderBy('name');
                 } elseif ($sort === 'price') {
-                    return $query->orderBy('price');
+                    return $query->orderByRaw('price - (price * discount/100)');
                 }
             })
             ->get();
