@@ -34,4 +34,10 @@ class DestinasiController extends Controller
         $destinasi = Destinasi::findOrFail($id);
         return $destinasi;
     }
+    public function like($id)
+    {
+        $destinasi = Destinasi::findOrFail($id);
+        $destinasi->increment('likes');
+        return response()->json(['likes' => $destinasi->likes]);
+    }
 }
