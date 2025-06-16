@@ -50,10 +50,11 @@
                 </div>
                 <div class="flex flex-col items-end justify-between gap-2 lg:flex-row lg:items-center lg:gap-0">
                     <p id="modal-price" class="text-xl font-semibold md:text-3xl lg:text-4xl text-primary"></p>
-                    <a href="#"
+                    <button
+                        data-wa="62895627434600" onclick="kirimPesanWA(this)"
                         class="items-center px-4 md:px-6 py-2 md:py-2.5 lg:px-8 lg:py-3.5 text-white text-xs md:text-base font-medium md:font-semibold bg-primary rounded-md brightness-100 hover:brightness-75 transition-all ease-out duration-300">
                         Pesan Sekarang
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -77,4 +78,14 @@
     document.getElementById('close-modal-btn').addEventListener('click', function() {
         document.getElementById('default-modal').classList.add('hidden');
     });
+
+    function kirimPesanWA(button) {
+        const destinasi = document.getElementById('modal-name').innerText; // ambil nama dari modal
+        const nomor = button.dataset.wa; // ambil nomor dari button yang diklik
+
+        const pesan = `Halo! Saya tertarik sama destinasi ${destinasi}. Boleh minta info lebih lanjutnya ya?`;
+
+        const url = `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`;
+        window.open(url, '_blank');
+    }
 </script>

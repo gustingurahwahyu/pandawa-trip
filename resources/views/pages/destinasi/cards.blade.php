@@ -131,4 +131,14 @@
             document.getElementById('default-modal').classList.remove('hidden');
         });
     });
+
+    // function kirimPesanWA(btn) {
+    //     const destinasi = btn.getAttribute('data-destinasi');
+    //     const nomor = btn.getAttribute('data-wa');
+
+    //     const pesan = `Halo, saya tertarik untuk memesan paket ${destinasi}. Apakah masih tersedia?`;
+
+    //     const url = `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`;
+    //     window.open(url, '_blank');
+    // }
 </script>
