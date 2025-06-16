@@ -38,9 +38,9 @@
         @foreach ($destinasis as $destinasi)
         <li class="splide__slide">
           <div
-            class="flex-col justify-center md:w-[21rem] lg:w-[19rem] xl:w-[24rem] h-[27rem] bg-white rounded-card">
+            class="flex-col group justify-center md:w-[21rem] lg:w-[19rem] xl:w-[24rem] h-[27rem] bg-white rounded-card">
             <div class="w-full overflow-hidden bg-white image-container h-80 rounded-card">
-              <img class="object-cover w-full h-full"
+              <img class="object-cover w-full h-full transition-transform duration-200 ease-in-out group-hover:scale-105"
                 src="{{ asset('storage/' . $destinasi->image) }}" alt="{{ $destinasi->name }}">
             </div>
             <div class="flex-col p-5 space-y-3">
