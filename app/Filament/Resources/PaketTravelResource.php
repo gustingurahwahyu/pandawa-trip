@@ -27,10 +27,10 @@ class PaketTravelResource extends Resource
                 Forms\Components\TextInput::make('name')->required(),
                 Forms\Components\FileUpload::make('image')->required(),
                 Forms\Components\Textarea::make('description')->required(),
-                Forms\Components\TextInput::make('capacity')->required(),
-                Forms\Components\TextInput::make('duration')->required(),
-                Forms\Components\TextInput::make('price')->required(),
-                Forms\Components\TextInput::make('discount'),
+                Forms\Components\TextInput::make('capacity')->required()->numeric(),
+                Forms\Components\TextInput::make('duration')->required()->numeric(),
+                Forms\Components\TextInput::make('price')->required()->numeric()->prefix('Rp'),
+                Forms\Components\TextInput::make('discount')->numeric()->prefix('%'),
             ]);
     }
 

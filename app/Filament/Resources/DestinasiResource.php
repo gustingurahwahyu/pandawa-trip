@@ -17,7 +17,7 @@ class DestinasiResource extends Resource
 {
     protected static ?string $model = Destinasi::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-map-pin';
 
     public static function form(Form $form): Form
     {
@@ -30,7 +30,7 @@ class DestinasiResource extends Resource
                     ->relationship('paketTravel', 'name'),
                 Forms\Components\FileUpload::make('image')->required(),
                 Forms\Components\Textarea::make('description')->required(),
-                Forms\Components\TextInput::make('price')->required(),
+                Forms\Components\TextInput::make('price')->required()->numeric()->prefix('Rp'),
                 Forms\Components\TextInput::make('location')->required(),
             ]);
     }
