@@ -30,7 +30,7 @@
     </div>
 
     <div class="w-full py-7 px-9 text-white bg-secondary rounded-lg text-center text-sm lg:text-base">
-      dibuat oleh <b>PancaSembah</b>, menggunakan Tailwind Css, Js, Laravel. <b> @2050</b>
+      dibuat oleh <b>LimaKala</b>, menggunakan Tailwind Css, Js, Laravel. <b> @2025</b>
     </div>
 
   </footer>
