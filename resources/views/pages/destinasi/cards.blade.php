@@ -26,14 +26,27 @@
                         </svg>
                         {{ $destinasi->location }}
                     </p>
-                    <p
-                        class="mt-0.5 md:mt-2 text-[0.5rem] text-graytext md:text-xs lg:text-sm line-clamp-2 md:line-clamp-2 lg:line-clamp-3 text-start">
+                    <p class="mt-0.5 md:mt-2 text-[0.5rem] text-graytext md:text-xs lg:text-sm line-clamp-2 md:line-clamp-2 lg:line-clamp-3 text-start">
                         {{ $destinasi->description }}
                     </p>
-                    <p
-                        class="mt-1 font-semibold md:mt-2 lg:mt-3 text-end md:text-lg lg:text-xl xl:text-2xl text-primary">
-                        Rp{{ number_format($destinasi->price, 0, ',', '.') }}
-                    </p>
+                    <div class="flex items-center justify-between mt-1 md:mt-2 lg:mt-3">
+                        <!-- like btn -->
+                        <div class="flex items-center gap-1">
+                            <div id="like-btn-{{ $destinasi->id }}" class="pointer like-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-[12px] md:h-[18px] stroke-graytext fill-transparent transition-all duration-200"
+                                    viewBox="0 0 48 48">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                        d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8" />
+                                </svg>
+                            </div>
+                            <span class="text-graytext">0</span>
+                        </div>
+
+                        <p class="text-end font-semibold  md:text-lg lg:text-xl xl:text-2xl text-primary">
+                            Rp{{ number_format($destinasi->price, 0, ',', '.') }}
+                        </p>
+                    </div>
                 </div>
             </div>
         </button>
@@ -49,6 +62,27 @@
 </div>
 
 <script>
+    document.querySelectorAll('.like-btn').forEach((btn) => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation(); // Biar ga buka modal
+
+            const svg = this.querySelector('svg');
+            const likeCountSpan = this.parentElement.querySelector('span');
+
+            // Toggle class
+            const isLiked = svg.classList.toggle('fill-primary');
+            svg.classList.toggle('stroke-primary', isLiked);
+            svg.classList.toggle('fill-transparent', !isLiked);
+            svg.classList.toggle('stroke-graytext', !isLiked);
+
+            // Update like count (cuma simulasi, nanti bisa connect ke backend)
+            let count = parseInt(likeCountSpan.innerText);
+            likeCountSpan.innerText = isLiked ? count + 1 : count - 1;
+
+            console.log(`Destinasi ${isLiked ? 'disukai' : 'tidak disukai'}`);
+        });
+    });
+
     document.querySelectorAll('.open-modal').forEach(function(card) {
         card.addEventListener('click', function(e) {
             e.preventDefault();
