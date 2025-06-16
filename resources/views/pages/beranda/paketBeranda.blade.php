@@ -46,14 +46,14 @@
       <ul class="splide__list flex h-[20rem] lg:h-[26rem]">
         @foreach ($pakets as $paket)
         <li class="splide__slide">
-          <div class="flex justify-center relative md:[13.6rem] lg:w-[19rem] xl:w-72 mx-auto">
+          <div class="flex group justify-center relative md:[13.6rem] lg:w-[19rem] xl:w-72 mx-auto">
             <div
               class="image-container w-full h-[20rem] lg:h-[26rem] bg-white rounded-card overflow-hidden">
-              <img class="object-cover w-full h-full" src="{{ asset('storage/' . $paket->image) }}"
+              <img class="object-cover w-full h-full transition-transform duration-200 ease-in-out group-hover:scale-105" src="{{ asset('storage/' . $paket->image) }}"
                 alt="{{ $paket->name }}">
             </div>
             <div
-              class="card-detail w-[15rem] md:w-[12rem] lg:w-[17rem] h-28 lg:h-44 bg-white z-10 rounded-card absolute top-64 lg:top-80 mx-auto drop-shadow-xl p-3 lg:p-5 space-y-1 lg:space-y-4">
+              class="card-detail w-[15rem] md:w-[12rem] lg:w-[17rem] h-28 lg:h-44 bg-white z-10 rounded-card absolute top-64 lg:top-80 mx-auto drop-shadow-sm p-3 lg:p-5 space-y-1 lg:space-y-4 transition-all duration-200 ease-in-out group-hover:drop-shadow-md">
               <p class="flex text-xs font-medium lg:text-base text-secondary">
                 <svg class="mr-2 w-[15px] lg:w-[20px]" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20" fill="none">
