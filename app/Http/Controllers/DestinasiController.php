@@ -37,7 +37,16 @@ class DestinasiController extends Controller
     public function like($id)
     {
         $destinasi = Destinasi::findOrFail($id);
-        $destinasi->increment('likes');
+
+        // Cek apakah request unlike
+        if (request()->has('unlike') && request()->unlike == 1) {
+            if ($destinasi->likes > 0) {
+                $destinasi->decrement('likes');
+            }
+        } else {
+            $destinasi->increment('likes');
+        }
+
         return response()->json(['likes' => $destinasi->likes]);
     }
 }

@@ -15,6 +15,4 @@ Route::get('/PDetail/{id}', [PaketController::class, 'show'])->name('show');
 Route::get('/destinasi', [DestinasiController::class, 'index'])->name('destinasi');
 Route::post('/destinasi/{id}/like', [DestinasiController::class, 'like'])->name('destinasi.like');
 
-
-
 Route::get('/tentangKami', [WebController::class, 'tentangKami'])->name('tentangKami');
