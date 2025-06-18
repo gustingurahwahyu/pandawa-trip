@@ -1,4 +1,4 @@
-<div class="container flex flex-col-reverse lg:flex-row px-8 mx-auto mb-4 lg:mb-0 md:my-10 lg:my-0 bg-softgray py-0 lg:py-20">
+<div class="container flex flex-col-reverse lg:flex-row px-8 mx-auto mb-4 lg:mb-0 md:my-10 lg:my-0 bg-softgray py-0 lg:py-12">
   <div class="lg:w-7/12 w-full my-auto">
     <h1 class="text-xl md:text-4xl md:mt-10 text-center lg:mt-0 lg:text-5xl/[72px] xl:text-6xl/[86px] lg:text-start font-bold text-secondary pe-0 xl:pe-10">Yuk Liburan Di Bali, <span class="text-primary">Jelajahi</span> Tempat Baru Yang Penuh Pesona</h1>
     <p class="text-xs md:text-base mt-5 lg:text-lg/[32px] text-center lg:text-start font-medium text-graytext md:px-32 lg:px-0 lg:pr-44 xl:pr-72">Liburan nggak harus ribet. Cukup pilih destinasi, dan kami siap membantu!</p>
@@ -29,6 +29,6 @@
     </div>
   </div>
   <div class="flex lg:w-5/12 w-9/12 mx-auto mb-4 md:mb-0">
-    <img class="w-80 md:w-96 lg:w-full mx-auto object-contain" src="image/hero-image.png" alt="Hero Image">
+    <img class="w-80 md:w-96 lg:w-10/12 mx-auto object-contain" src="image/hero-image.png" alt="Hero Image">
   </div>
 </div>

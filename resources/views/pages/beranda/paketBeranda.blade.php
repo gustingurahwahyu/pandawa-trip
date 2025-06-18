@@ -95,7 +95,7 @@
     const nextButton = document.querySelector('.splide__arrow--next');
 
     // Set initial state - prev button gray, next button orange
-    prevButton.classList.add('bg-graytext');
+    prevButton.classList.add('bg-graytext/50');
     nextButton.classList.add('bg-primary');
 
     var splide = new Splide('#paket-splide', {
@@ -137,7 +137,7 @@
       // prev button
       if (currentIndex <= 0) {
         prevButton.className =
-          'splide__arrow--prev flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext hover:opacity-80 transition';
+          'splide__arrow--prev flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext/50 hover:opacity-80 transition';
       } else {
         // Not at beginning, prev should be orange
         prevButton.className =
@@ -148,7 +148,7 @@
       if (currentIndex >= lastIndex) {
         // At the end, next should be gray
         nextButton.className =
-          'splide__arrow--next flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext hover:opacity-80 transition';
+          'splide__arrow--next flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext/50 hover:opacity-80 transition';
       } else {
         // Not at end, next should be orange
         nextButton.className =
@@ -176,18 +176,18 @@
         // Cek apakah slide pertama aktif
         if (translateX >= -294) {
           prevButton.classList.remove('bg-primary');
-          prevButton.classList.add('bg-graytext');
+          prevButton.classList.add('bg-graytext/50');
         } else {
-          prevButton.classList.remove('bg-graytext');
+          prevButton.classList.remove('bg-graytext/50');
           prevButton.classList.add('bg-primary');
         }
 
         // Cek apakah slide terakhir aktif
         if (translateX <= lastTranslateX) {
           nextButton.classList.remove('bg-primary');
-          nextButton.classList.add('bg-graytext');
+          nextButton.classList.add('bg-graytext/50');
         } else if (translateX > lastTranslateX - 16) {
-          nextButton.classList.remove('bg-graytext');
+          nextButton.classList.remove('bg-graytext/50');
           nextButton.classList.add('bg-primary');
         }
       }, 50);

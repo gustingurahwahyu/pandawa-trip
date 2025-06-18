@@ -1,10 +1,10 @@
-<nav class="bg-white/0 sticky top-0 z-[11] transtion-all ease-out duration-100" id="navbar">
-  <div class="container flex items-center justify-between p-5 lg:p-8 mx-auto">
+<nav class="bg-white/0 sticky top-0 z-[11] transition-all ease-out duration-300 transform" id="navbar">
+  <div class="container flex items-center justify-between p-4 lg:p-6 mx-auto">
 
     <!-- Logo and Tagline -->
-    <div class="flex items-center">
-      <img class="w-36 md:w-48 xl:w-56" src="{{ asset('image/logo-pandawa-trip.svg') }}" alt="Pandawa Trip">
-    </div>
+    <a href="/" class="flex items-center">
+      <img class="w-36 md:w-48 xl:w-[12rem]" src="{{ asset('image/logo-pandawa-trip.svg') }}" alt="Pandawa Trip">
+    </a>
 
     <!-- Navigation Links -->
     <div id="navbar-element" class="space-x-8 lg:flex hidden">
@@ -115,18 +115,42 @@
 </nav>
 
 <script>
+  // const navbar = document.getElementById('navbar');
+
+  // window.addEventListener("scroll", () => {
+  //   const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+  //   if (scrollTop > 100) {
+  //     navbar.classList.add('bg-white/100');
+  //     navbar.classList.remove('bg-white/0');
+  //   } else {
+  //     navbar.classList.add('bg-white/0');
+  //     navbar.classList.remove('bg-white/100');
+  //   }
+  // });
+
   const navbar = document.getElementById('navbar');
+  let lastScrollTop = 0;
 
   window.addEventListener("scroll", () => {
-    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > 100) {
-      navbar.classList.add('bg-white/100');
-      navbar.classList.remove('bg-white/0');
-    } else {
-      navbar.classList.add('bg-white/0');
+    if (scrollTop === 0) {
+      // Scroll di paling atas: transparan & tampil
+      navbar.classList.remove('translate-y-[-100%]');
       navbar.classList.remove('bg-white/100');
+      navbar.classList.add('bg-white/0');
+    } else if (scrollTop > lastScrollTop) {
+      // Scroll ke bawah: sembunyi
+      navbar.classList.add('translate-y-[-100%]');
+    } else {
+      // Scroll ke atas: tampil + solid
+      navbar.classList.remove('translate-y-[-100%]');
+      navbar.classList.remove('bg-white/0');
+      navbar.classList.add('bg-white/100');
     }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   });
 
   // Ketika Navbar berada di detail

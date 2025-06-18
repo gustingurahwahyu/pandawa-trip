@@ -16,7 +16,7 @@
 
   <div class="flex flex-col items-center justify-between mx-auto md:flex-row">
     <h2
-      class="w-full lg:w-6/12 text-2xl md:pr-60 text-center lg:pr-0 lg:text-4xl/[60px] md:text-start font-bold text-secondary mb-6 md:mb-0">
+      class="w-full lg:w-6/12 text-2xl md:pr-60 text-center lg:pr-12 xl:pr-40 lg:text-4xl/[60px] md:text-start font-bold text-secondary mb-6 md:mb-0">
       Tempat Keren yang
       <span class="text-primary">Wajib Kamu</span> Kunjungi
     </h2>
@@ -74,7 +74,7 @@
     const nextButton = document.getElementById('next-arrow');
 
     // Set initial state - prev button gray, next button orange
-    prevButton.classList.add('bg-graytext');
+    prevButton.classList.add('bg-graytext/50');
     nextButton.classList.add('bg-primary');
 
     var splide = new Splide('#destination-splide', {
@@ -115,7 +115,7 @@
       // prev button
       if (currentIndex <= 0) {
         prevButton.className =
-          'splide__arrow--prev flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext hover:opacity-80 transition';
+          'splide__arrow--prev flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext/50 hover:opacity-80 transition';
       } else {
         // Not at beginning, prev should be orange
         prevButton.className =
@@ -126,7 +126,7 @@
       if (currentIndex >= lastIndex) {
         // At the end, next should be gray
         nextButton.className =
-          'splide__arrow--next flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext hover:opacity-80 transition';
+          'splide__arrow--next flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext/50 hover:opacity-80 transition';
       } else {
         // Not at end, next should be orange
         nextButton.className =
@@ -151,18 +151,18 @@
         // Cek apakah slide pertama aktif
         if (translateX >= -392) {
           prevButton.classList.remove('bg-primary');
-          prevButton.classList.add('bg-graytext');
+          prevButton.classList.add('bg-graytext/50');
         } else {
-          prevButton.classList.remove('bg-graytext');
+          prevButton.classList.remove('bg-graytext/50');
           prevButton.classList.add('bg-primary');
         }
 
         // Cek apakah slide terakhir aktif
         if (translateX <= lastTranslateX) {
           nextButton.classList.remove('bg-primary');
-          nextButton.classList.add('bg-graytext');
+          nextButton.classList.add('bg-graytext/50');
         } else if (translateX > lastTranslateX - 16) {
-          nextButton.classList.remove('bg-graytext');
+          nextButton.classList.remove('bg-graytext/50');
           nextButton.classList.add('bg-primary');
         }
       }, 50);
