@@ -1,3 +1,4 @@
+@php $delay = 200; @endphp
 <!-- Fixed Splide Implementation for Laravel Blade + Tailwind -->
 <div class="container px-8 py-10 mx-auto lg:py-20 bg-softgray">
   <!-- CSS Fixes -->
@@ -16,11 +17,11 @@
 
   <div class="flex flex-col items-center justify-between mx-auto md:flex-row">
     <h2
-      class="w-full lg:w-6/12 text-2xl md:pr-60 text-center lg:pr-12 xl:pr-40 lg:text-4xl/[60px] md:text-start font-bold text-secondary mb-6 md:mb-0">
+      class="w-full lg:w-6/12 text-2xl md:pr-60 text-center lg:pr-12 xl:pr-40 lg:text-4xl/[60px] md:text-start font-bold text-secondary mb-6 md:mb-0" data-aos="fade-right">
       Tempat Keren yang
       <span class="text-primary">Wajib Kamu</span> Kunjungi
     </h2>
-    <div class="flex space-x-2">
+    <div class="flex space-x-2" data-aos="fade-left">
       <button id="prev-arrow"
         class="flex items-center justify-center w-8 h-8 transition rounded-full splide__arrow--prev lg:w-10 lg:h-10 hover:opacity-80">
         <img class="w-[20px] lg:w-[24px]" src="image/icon/arrow-left.svg" alt="arrow left">
@@ -36,7 +37,7 @@
     <div class="splide__track orverflow-hidden">
       <ul class="flex splide__list">
         @foreach ($destinasis as $destinasi)
-        <li class="splide__slide">
+        <li class="splide__slide" data-aos="fade-right" data-aos-delay="{{ $delay }}">
           <div
             class="flex-col group justify-center md:w-[21rem] lg:w-[19rem] xl:w-[24rem] h-[27rem] bg-white rounded-card">
             <div class="w-full overflow-hidden bg-white image-container h-80 rounded-card">
@@ -57,6 +58,7 @@
             </div>
           </div>
         </li>
+        @php $delay += 150; @endphp
         @endforeach
       </ul>
     </div>

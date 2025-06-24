@@ -18,7 +18,7 @@
     <div class="flex space-x-5 items-center">
 
       <!-- Pesan Sekarang Button -->
-      <div class="hidden md:flex">
+      <div id="pesan-btn" class="hidden md:flex">
         <a href="/paket" class=" px-8 py-3.5 text-white font-semibold bg-primary rounded-md brightness-100 hover:brightness-75 transition-all ease-out duration-300">
           Pesan Sekarang
         </a>
@@ -130,6 +130,8 @@
   // });
 
   const navbar = document.getElementById('navbar');
+  const pesanBtn = document.getElementById('pesan-btn');
+  const navbarLinks = document.getElementById('navbar-element');
   let lastScrollTop = 0;
 
   window.addEventListener("scroll", () => {
@@ -160,12 +162,17 @@
     // Hilangkan sticky-top navbar
     navbar.classList.remove('sticky');
     navbar.classList.remove('top-0');
+    pesanBtn.classList.remove('md:flex');
+    pesanBtn.classList.add('md:hidden');
+    navbarLinks.classList.remove('space-x-8');
+    navbarLinks.classList.add('ms-auto', 'space-x-12');
 
 
-  }
-  // ketika navbar berada di page biasa
-  else {
-
+  } else if (window.location.pathname.startsWith('/PDetail')) {
+    pesanBtn.classList.remove('md:flex');
+    pesanBtn.classList.add('md:hidden');
+    navbarLinks.classList.remove('space-x-8');
+    navbarLinks.classList.add('ms-auto', 'space-x-12');
   }
 
   // navbar active and inactive element style

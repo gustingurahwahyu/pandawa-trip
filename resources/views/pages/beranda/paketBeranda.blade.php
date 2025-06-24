@@ -1,3 +1,4 @@
+@php $delay = 200; @endphp
 <!-- splide with fixes -->
 <div class="container px-8 py-10 mx-auto lg:pt-20 bg-softgray">
   <!-- Add this style block to fix the jumping issue -->
@@ -25,11 +26,11 @@
 
   <div class="flex flex-col items-center justify-between mx-auto mb-10 md:flex-row">
     <h2
-      class="w-full md:w-5/12 text-2xl lg:text-4xl/[60px] font-bold text-secondary text-center md:text-start mb-6 md:mb-0">
+      class="w-full md:w-5/12 text-2xl lg:text-4xl/[60px] font-bold text-secondary text-center md:text-start mb-6 md:mb-0" data-aos="fade-right">
       Paket Terbaik dari <span class="text-primary">Pandawa Trip</span>
     </h2>
 
-    <div class="flex space-x-2 splide__arrows">
+    <div class="flex space-x-2 splide__arrows" data-aos="fade-left">
       <button
         class="flex items-center justify-center w-8 h-8 transition rounded-full splide__arrow--prev lg:w-10 lg:h-10 bg-graytext hover:opacity-80">
         <img class="w-[20px] lg:w-[24px]" src="image/icon/arrow-left.svg" alt="arrow left">
@@ -45,7 +46,7 @@
     <div class="pb-20 splide__track lg:pb-28">
       <ul class="splide__list flex h-[20rem] lg:h-[26rem]">
         @foreach ($pakets as $paket)
-        <li class="splide__slide">
+        <li class="splide__slide" data-aos="fade-right" data-aos-delay="{{ $delay }}">
           <div class="flex group justify-center relative md:[13.6rem] lg:w-[19rem] xl:w-72 mx-auto">
             <div
               class="image-container w-full h-[20rem] lg:h-[26rem] bg-white rounded-card overflow-hidden">
@@ -79,6 +80,7 @@
             </div>
           </div>
         </li>
+        @php $delay += 150; @endphp
         @endforeach
       </ul>
     </div>
@@ -170,8 +172,8 @@
         // Ekstrak angka translateX
         const translateX = parseFloat(transform.match(/translateX\((-?\d+\.?\d*)px\)/)[1]);
 
-        console.log(translateX);
-        console.log(lastTranslateX);
+        // console.log(translateX);
+        // console.log(lastTranslateX);
 
         // Cek apakah slide pertama aktif
         if (translateX >= -294) {

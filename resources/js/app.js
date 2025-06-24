@@ -1,22 +1,11 @@
 import './bootstrap';
-
-
-
-// // Scroll Change Color Navbar
-// const navbar = document.getElementById('navbar');
-// window.onscroll = function () { 
-//     if ( document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
-//         navbar.classList.add("bg-white");
-//         navbar.classList.remove("transparent");
-//     } 
-//     else {
-//         navbar.classList.add("transparent");
-//         navbar.classList.remove("bg-white");
-//     }
-// };
-
 import { Splide } from '@splidejs/splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+AOS.init();
 
 var splide = new Splide( '#team-cards', {
     type: 'loop',
