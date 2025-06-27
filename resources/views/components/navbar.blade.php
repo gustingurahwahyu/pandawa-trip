@@ -8,10 +8,10 @@
 
     <!-- Navigation Links -->
     <div id="navbar-element" class="space-x-8 lg:flex hidden">
-      <a href="/" class="text-graytext font-medium">Beranda</a>
-      <a href="/paket" class="text-graytext font-medium">Paket</a>
-      <a href="/destinasi" class="text-graytext font-medium">Destinasi</a>
-      <a href="/tentangKami" class="text-graytext font-medium">Tentang Kami</a>
+      <a href="/" class="text-graytext font-medium hover:brightness-50 transition-all ease-out duration-200">Beranda</a>
+      <a href="/paket" class="text-graytext font-medium hover:brightness-50 transition-all ease-out duration-200">Paket</a>
+      <a href="/destinasi" class="text-graytext font-medium hover:brightness-50 transition-all ease-out duration-200">Destinasi</a>
+      <a href="/tentangKami" class="text-graytext font-medium hover:brightness-50 transition-all ease-out duration-200">Tentang Kami</a>
     </div>
 
     <!-- Pesan Sekarang dan Hamburger -->

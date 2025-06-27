@@ -32,11 +32,11 @@
 
     <div class="flex space-x-2 splide__arrows" data-aos="fade-left">
       <button
-        class="flex items-center justify-center w-8 h-8 transition rounded-full splide__arrow--prev lg:w-10 lg:h-10 bg-graytext hover:opacity-80">
+        class="flex items-center justify-center w-8 h-8 transition rounded-full splide__arrow--prev lg:w-10 lg:h-10 bg-graytext hover:brightness-75 ease-out duration-300">
         <img class="w-[20px] lg:w-[24px]" src="image/icon/arrow-left.svg" alt="arrow left">
       </button>
       <button
-        class="flex items-center justify-center w-8 h-8 transition rounded-full splide__arrow--next lg:w-10 lg:h-10 bg-primary hover:opacity-80">
+        class="flex items-center justify-center w-8 h-8 transition rounded-full splide__arrow--next lg:w-10 lg:h-10 bg-primary hover:brightness-75 ease-out duration-300">
         <img class="w-[20px] lg:w-[24px]" src="image/icon/arrow-right.svg" alt="arrow right">
       </button>
     </div>
@@ -69,7 +69,7 @@
                 <p class="text-graytext text-medium lg:text-xl">
                   Rp{{ number_format($paket->price, 0, ',', '.') }}</p>
                 <a href="{{ route('show', $paket->id) }}"
-                  class="flex items-center justify-center transition rounded-full w-7 lg:w-10 h-7 lg:h-10 bg-primary hover:opacity-80">
+                  class="flex items-center justify-center transition rounded-full w-7 lg:w-10 h-7 lg:h-10 bg-primary hover:brightness-75 ease-out duration-300">
                   <svg class="w-[18px] lg:w-[24px] ms-0.5" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M9 6L15 12L9 18" stroke="white" stroke-width="2"
@@ -139,22 +139,22 @@
       // prev button
       if (currentIndex <= 0) {
         prevButton.className =
-          'splide__arrow--prev flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext/50 hover:opacity-80 transition';
+          'splide__arrow--prev flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext/50 hover:brightness-75 ease-out duration-300 transition';
       } else {
         // Not at beginning, prev should be orange
         prevButton.className =
-          'splide__arrow--prev flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-primary hover:opacity-80 transition';
+          'splide__arrow--prev flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-primary hover:brightness-75 ease-out duration-300 transition';
       }
 
       // next button
       if (currentIndex >= lastIndex) {
         // At the end, next should be gray
         nextButton.className =
-          'splide__arrow--next flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext/50 hover:opacity-80 transition';
+          'splide__arrow--next flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext/50 hover:brightness-75 ease-out duration-300 transition';
       } else {
         // Not at end, next should be orange
         nextButton.className =
-          'splide__arrow--next flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-primary hover:opacity-80 transition';
+          'splide__arrow--next flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-primary hover:brightness-75 ease-out duration-300 transition';
       }
     }
 

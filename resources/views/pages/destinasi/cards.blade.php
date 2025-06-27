@@ -33,7 +33,7 @@
                     <div class="flex items-center justify-between mt-1 md:mt-2 lg:mt-3">
                         <!-- like btn -->
                         <div class="flex items-center gap-1">
-                            <div id="like-btn-{{ $destinasi->id }}" class="pointer like-btn">
+                            <div id="like-btn-{{ $destinasi->id }}" class="pointer like-btn hover:opacity-75 ease-out duration-100 transition">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="h-[12px] md:h-[18px] stroke-graytext fill-transparent transition-all duration-200"
                                     viewBox="0 0 48 48">
@@ -53,7 +53,7 @@
             </div>
         </button>
         @empty
-        <p class="col-span-4 text-center text-gray-400">Tidak ada destinasi ditemukan.</p>
+        <p class="col-span-4 text-center text-graytext mb-10">Tidak ada destinasi ditemukan.</p>
         @endforelse
     </div>
 

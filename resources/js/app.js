@@ -14,6 +14,8 @@ var splide = new Splide( '#team-cards', {
     gap: '1.5rem',
     drag: false,
     snap: false,
+    pauseOnHover: false,
+    pauseOnFocus: false,
     pagination: false,
     arrows: false,
     breakpoints: {
@@ -25,6 +27,8 @@ var splide = new Splide( '#team-cards', {
         }
     },
     autoScroll: {
+        pauseOnHover: false,
+        pauseOnFocus: false,
         speed: 0.8,
     },
 });

@@ -21,7 +21,7 @@
         </div>
         <div class="relative inline-block">
             <button id="dropdownDefaultButton" type="button"
-                class="flex items-center px-2 py-1 text-xs bg-transparent border rounded-full border-graytext md:text-sm text-graytext md:py-1.5 md:px-3">
+                class="flex items-center px-2 py-1 text-xs bg-transparent border rounded-full border-graytext md:text-sm text-graytext md:py-1.5 md:px-3 hover:brightness-50 ease-out duration-200 transtition">
                 <img class="w-4 md:w-6 p-0.5 md:pe-1 scale-y-[-1]" src="{{ asset('image/icon/sort.svg') }}" alt="sort">
                 Urutkan
             </button>

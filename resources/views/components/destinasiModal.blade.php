@@ -11,7 +11,7 @@
         <!-- Close Button -->
         <div class="absolute z-[98] top-0 right-0 md:top-4 md:right-4">
             <button type="button"
-                class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg ms-auto"
+                class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg ms-auto hover:brightness-75 ease-out duration-200 transition"
                 data-modal-hide="default-modal" id="close-modal-btn" aria-label="Close modal">
                 <svg class="w-[18px] md:w-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
                     <path
@@ -28,8 +28,8 @@
             <!-- Modal Images -->
             <div class="flex flex-col justify-center gap-y-2 md:gap-y-5">
                 <!-- Big Image -->
-                <div class="image-big-container w-full rounded-card overflow-hidden h-40 md:h-[25rem]">
-                    <img id="modal-image" src="" alt="" class="object-cover w-full h-full ">
+                <div class="image-big-container w-full rounded-card overflow-hidden h-40 md:h-[25rem] group">
+                    <img id="modal-image" src="" alt="" class="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
                 </div>
             </div>
 

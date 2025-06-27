@@ -23,11 +23,11 @@
     </h2>
     <div class="flex space-x-2" data-aos="fade-left">
       <button id="prev-arrow"
-        class="flex items-center justify-center w-8 h-8 transition rounded-full splide__arrow--prev lg:w-10 lg:h-10 hover:opacity-80">
+        class="flex items-center justify-center w-8 h-8 transition rounded-full splide__arrow--prev lg:w-10 lg:h-10 hover:brightness-75 ease-out duration-300">
         <img class="w-[20px] lg:w-[24px]" src="image/icon/arrow-left.svg" alt="arrow left">
       </button>
       <button id="next-arrow"
-        class="flex items-center justify-center w-8 h-8 transition rounded-full splide__arrow--next lg:w-10 lg:h-10 hover:opacity-80">
+        class="flex items-center justify-center w-8 h-8 transition rounded-full splide__arrow--next lg:w-10 lg:h-10 hover:brightness-75 ease-out duration-300">
         <img class="w-[20px] lg:w-[24px]" src="image/icon/arrow-right.svg" alt="arrow right">
       </button>
     </div>
@@ -117,22 +117,22 @@
       // prev button
       if (currentIndex <= 0) {
         prevButton.className =
-          'splide__arrow--prev flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext/50 hover:opacity-80 transition';
+          'splide__arrow--prev flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext/50 hover:brightness-75 ease-out duration-300 transition';
       } else {
         // Not at beginning, prev should be orange
         prevButton.className =
-          'splide__arrow--prev flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-primary hover:opacity-80 transition';
+          'splide__arrow--prev flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-primary hover:brightness-75 ease-out duration-300 transition';
       }
 
       // next button
       if (currentIndex >= lastIndex) {
         // At the end, next should be gray
         nextButton.className =
-          'splide__arrow--next flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext/50 hover:opacity-80 transition';
+          'splide__arrow--next flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-graytext/50 hover:brightness-75 ease-out duration-300 transition';
       } else {
         // Not at end, next should be orange
         nextButton.className =
-          'splide__arrow--next flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-primary hover:opacity-80 transition';
+          'splide__arrow--next flex w-8 lg:w-10 h-8 lg:h-10 items-center justify-center rounded-full bg-primary hover:brightness-75 ease-out duration-300 transition';
       }
     }
 

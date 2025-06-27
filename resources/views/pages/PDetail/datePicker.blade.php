@@ -10,7 +10,7 @@
             Rp{{ number_format($paket->price, 0, ',', '.') }}
         </p>
         <div>
-            <input id="tanggalTrip" class="text-[10px] md:text-base lg:text-lg xl:text-xl w-[5.5rem] md:w-36 lg:w-40 xl:w-[11rem]"
+            <input id="tanggalTrip" class="text-[10px] md:text-base lg:text-lg xl:text-xl w-[5.5rem] md:w-36 lg:w-40 xl:w-[11rem] cursor-pointer"
                 type="date" placeholder="Pilih Tanggal">
         </div>
         <button id="waButton" data-paket="{{ $paket->name }}"
